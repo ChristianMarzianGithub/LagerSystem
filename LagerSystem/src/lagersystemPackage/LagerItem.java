@@ -8,7 +8,7 @@ public class LagerItem {
 	private String type;
 	private String name;
 	private Date dateOfExpiry;
-	
+	private Date dateOfBuying;
 	
 	
 	
@@ -48,5 +48,11 @@ public class LagerItem {
 	}
 	public void setDateOfExpiry(Date dateOfExpiry) {
 		this.dateOfExpiry = dateOfExpiry;
+	}
+	public Date getDateOfBuying() {
+		return dateOfBuying;
+	}
+	public void setDateOfBuying(Date dateOfBuying) {
+		this.dateOfBuying = dateOfBuying;
 	}
 }
