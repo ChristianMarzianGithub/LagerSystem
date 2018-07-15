@@ -7,42 +7,33 @@ public class Lager {
 
 	private String lagerType;
 	private String name;
+	private List<LagerItem> liste;
 	
+	public Lager() {
+		liste = new ArrayList<LagerItem>();
+	}
 	
-	
-	
-	public List<LagerItem> getList(ItemFilter filter){
-		List<LagerItem> liste = new ArrayList<LagerItem>();
+	public List<LagerItem> get(ItemFilter filter)
+	{		 
 		return liste;
 	}
+		
+	public void fuegeItemHinzu(LagerItem item) 
+	{
+		liste.add(item);
+	}
 	
-	public List<Rezept> getAvailableRezeoteListe(){
-		List<Rezept> listeRezepte = new ArrayList<Rezept>();
-				
+	
+	public List<Rezept> getAvailableRezepteListe()
+	{
+		List<Rezept> listeRezepte = new ArrayList<Rezept>();				
 		return listeRezepte;
 	}
-	
-	public void saveNewLagerItem(LagerItem lagerItem){
 		
+	public void deleteLagerItem(LagerItem lagerItem)
+	{
+		liste.remove(lagerItem);
 	}
-	
-	public void deleteLagerItem(LagerItem lagerItem){
-		
-	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	
 	public String getLagerType() {
 		return lagerType;

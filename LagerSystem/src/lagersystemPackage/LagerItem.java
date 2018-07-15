@@ -11,20 +11,6 @@ public class LagerItem {
 	private Date dateOfBuying;
 	
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	public int getId() {
 		return id;
 	}
